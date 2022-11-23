@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul,
+ol {
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fnt-12 {
+  font-size: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fnt-14 {
+  font-size: 14px;
+}
+
+.meetingTime ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  color: #858585;
+  font-size: 14px;
+
+}
+
+.meetingTime ul li span.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  color: black;
+}
+
+.showIng {
+  display: block !important;
+  background: rgb(0 0 0 / 43%) !important;
+  opacity: 1 !important;
+  padding-top: 5%;
+}
+
+.popDet {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.popDet h5 {
+  width: 130px;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.popDet p {
+  color: #888;
+  font-size: 14px;
+  margin: 0;
+  width: calc(100% - 150px);
 }
